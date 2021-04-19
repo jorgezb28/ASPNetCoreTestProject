@@ -18,7 +18,6 @@ namespace CourseProjectApp
                     webBuilder.UseStartup<Startup>();
                     webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
                     webBuilder.UseIISIntegration();
-                    webBuilder.UseKestrel();
                 });
     }
 }

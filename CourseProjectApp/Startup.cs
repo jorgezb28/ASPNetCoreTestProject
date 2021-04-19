@@ -50,11 +50,11 @@ namespace CourseProjectApp
             app.UseStaticFiles();
             app.UseRouting();
 
-            app.UseMvc(routes =>
+            app.UseEndpoints(routes =>
             {
-                routes.MapRoute(
+                routes.MapControllerRoute(
                     name:"default",
-                    template: "{controller=Main}/{action=Index}/{id?}"
+                     "{controller=Main}/{action=Index}/{id?}"
                     );
             });
         }
